@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './produto.css',
 })
 export class Produto {
-  nome = 'Placa Arduino Uno';
+  produto = 'Placa Arduino Uno';
   preco = 59.90;
+  mostrarProduto = true;
+  mostrarPreco = true;
 }

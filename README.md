@@ -1,4 +1,4 @@
-# ECommerce
+# E-Commerce
 
 Esse projeto foi gerado usando Angular Cli [Angular CLI](https://github.com/angular/angular-cli) versão 22.0.4.
 
