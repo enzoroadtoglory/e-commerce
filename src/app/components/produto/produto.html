@@ -4,11 +4,7 @@
     <h2>Preço: R${{preco}}</h2>
 </div>-->
 
-<div>
-    @for(item of produtos; track item){
-        <div>
-            <h3>{{ item.Produto | uppercase}}</h3>
-            <p>{{ item.preco | precoformatado}}</p>
-        </div>
-    }
+<div class = "produto">
+   <h3>{{ nome | uppercase }}</h3>
+   <p>{{ preco | precoformatado }}</p>
 </div>
