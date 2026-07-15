@@ -14,5 +14,10 @@ export class ListaProdutos {
     {nome: 'Luz Gamer', preco:13.78},
     {nome: 'Luva de pedreiro Gamer', preco:34.55},
     {nome: 'Lulabolso Gamer', preco: 13.22}
-  ]
+  ];
+
+  exibirProduto(nome : string){
+    console.log('Produto selecionado: ',nome);
+  }
+
 }

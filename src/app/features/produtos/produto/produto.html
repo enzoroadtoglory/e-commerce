@@ -1,4 +1,4 @@
-<!-- Cria a div para exibir as informações do produto -->>
+<!-- Cria a div para exibir as informações do produto -->
 <!--<div>
     <h1>Produto: {{ produto }}</h1>
     <h2>Preço: R${{preco}}</h2>
@@ -7,4 +7,7 @@
 <div class = "produto">
    <h3>{{ nome | uppercase }}</h3>
    <p>{{ preco | precoformatado }}</p>
+
+   <button (click)="selecionarProduto()">Selecionar {{ nome }}</button>
+
 </div>
