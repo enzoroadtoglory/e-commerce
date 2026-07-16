@@ -1,9 +1,11 @@
 <div>
-    @for (item of produtos; track item){
+    @for (item of produtos(); track item){
         <app-produto 
         [nome] = "item.nome"
         [preco] = "item.preco"
         (produtoSelecionado)="exibirProduto($event)"
         ></app-produto>
     }
+    <p><button (click)="adicionarProduto()">Adicionar Produto</button></p>
+
 </div>
