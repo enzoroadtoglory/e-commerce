@@ -1,0 +1,16 @@
+.produto{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px;
+    padding: 10px;
+    border: 4px solid;
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgb(47, 47, 73);
+    width: fit-content;
+    flex-wrap: wrap;
+}
+
+button{
+    color: black;
+    background-color: #8686AC;
+}

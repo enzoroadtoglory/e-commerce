@@ -1,4 +1,9 @@
-<!-- Remove tamplate do angular -->
- <h1>Minha loja virtual</h1>
- <!-- Adiciona componente do produto para exibir as informações do preço -->
- <app-lista-produtos></app-lista-produtos>
+<div>
+    <h1>{{ nomeLoja }}</h1>
+    <nav>
+        <a routerLink="/">Produtos</a>
+        <a routerLink="/carrinho">Carrinho</a>
+    </nav>
+    <hr>
+    <router-outlet></router-outlet>
+</div>

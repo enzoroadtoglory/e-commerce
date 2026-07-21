@@ -5,7 +5,7 @@ import { PrecoFormatadoPipe } from '../../../shared/pipes/preco-formatado-pipe/p
 
 @Component({
   selector: 'app-produto',
-  imports: [UpperCasePipe, CurrencyPipe, PrecoFormatadoPipe],
+  imports: [UpperCasePipe, PrecoFormatadoPipe],
   templateUrl: './produto.html',
   styleUrl: './produto.css',
 })

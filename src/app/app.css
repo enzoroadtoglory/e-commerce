@@ -1,0 +1,16 @@
+div{
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',sans-serif;
+ color: #d1d1f5;
+}
+
+a{
+    margin-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #f8ffff;
+}
+
+body{
+ margin: 0;
+ padding: 0;
+}

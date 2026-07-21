@@ -1,0 +1,10 @@
+.caixa{
+    border: #8686AC solid;
+    width: fit-content;
+    display: flex;
+}
+
+button{
+    color: black;
+    background-color: #8686AC;
+}

@@ -1,11 +1,32 @@
 <div>
-    @for (item of produtos(); track item){
-        <app-produto 
-        [nome] = "item.nome"
-        [preco] = "item.preco"
-        (produtoSelecionado)="exibirProduto($event)"
-        ></app-produto>
-    }
-    <p><button (click)="adicionarProduto()">Adicionar Produto</button></p>
 
+    @for (item of produtos(); track item){
+        <div class="caixa">
+            <app-produto 
+            [nome] = "item.nome"
+            [preco] = "item.preco"
+            (produtoSelecionado)="exibirProduto($event)"
+            ></app-produto>
+    
+            <p><button (click) = "adicionarAoCarrinho(item)"> Adicionar ao carrinho</button></p>
+        </div>
+    }
+    
+    <p><button (click) = adicionarProduto()>Adicionar Produto</button></p>
+    <h2>Total de produtos : {{ totalProdutos() }}</h2>
+    <h3>Preco total dos produtos : {{ valorTotal() | precoformatado}}</h3>
+
+    <p><button (click)="substituirProdutos()"> substituirProdutos</button></p>
+
+    <hr>
+
+    <h2>Carrinho</h2>
+
+    <p><button (click) = "limparCarrinho()">Limpar Carrinho</button></p>
+    @for(item of carrinho(); track $index){
+        <p>{{item.nome | uppercase}} - {{item.preco | precoformatado}}</p>
+    }
+
+    <p><strong>Itens no carrinho: </strong> {{quantidadeCarrinho()}}</p>
+    <p><strong>Total no carrinho: </strong> {{totalCarrinho() | precoformatado}}</p>
 </div>
